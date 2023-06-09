@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -19,12 +20,9 @@ nav {
 nav .logo {
   width: 60px;
   height: auto;
-  left: 0px;
+  margin-top: 5.5px;
 }
 
-nav .logo p {
-  color: #cbb279;
-}
 nav ul {
   float: right;
 }
@@ -37,8 +35,7 @@ nav .nav_links {
   position: absolute;
   top: 0px;
   right: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 16px;
   color: #cbb279;
   word-spacing: 8px;
@@ -64,15 +61,24 @@ body {
   background-color: white;
 }
 
-.dessert {
-  margin-top: 130px;
-  margin-left: 0px;
-  width: 500px;
-  height: auto;
+.intro-pic {
+  width: 60px;
+}
+
+.intro {
+  margin-top: 200px;
+  margin-left: 20px;
 }
 
 .lezzerts {
+  backgrounf
   color: black;
-  text-align: center;
-  text-shadow: 5px;
+  font-size: 40px;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.tagline {
+  font-size: 20px;
+  margin-left: ;
 }
