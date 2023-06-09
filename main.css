@@ -47,19 +47,21 @@ nav .nav_links {
   list-style-type: none;
 }
 
-a:link {
-  color:#e1d4bb ;
-  text-decoration: none;
+a:visited {
+  color: #e1d4bb;
 }
 
 a:hover {
   color: #cbb279;
   cursor: pointer;
 }
+a:link {
+  color: #e1d4bb;
+  text-decoration: none;
+}
 
 body {
   background-color: white;
-  
   min-height: 100vh;
 }
 
