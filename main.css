@@ -13,6 +13,7 @@ nav {
   background-color: #537188;
   line-height: 75px;
   padding: 0px 100px;
+  left:0;
   top: 0;
   position: absolute;
   z-index: 1;
@@ -33,6 +34,7 @@ nav ul li {
 }
 
 nav .nav_links {
+  margin-right: 5%;
   position: absolute;
   top: 0px;
   right: 10px;
@@ -64,48 +66,4 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.intro {
-  display: flex;
-  align-items: center;
-}
-
-.intro img {
-  width: 50%; /* Adjust the width as needed */
-}
-
-.intro .description {
-  flex-grow: 1;
-}
-
-.gallery {
-  display: flex;
-  overflow: hidden;
-}
-
-.gallery-item {
-  flex: 0 0 100%;
-  animation: slide 10s infinite; /* Adjust the duration as desired */
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  33.33% {
-    transform: translateX(-100%);
-  }
-  66.66% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(
-      -200%
-    ); /* Adjust the translation based on the number of gallery items */
-  }
-}
-
-#bakeddesserts {
-  list-style-type: none;
 }
