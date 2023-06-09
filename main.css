@@ -13,7 +13,8 @@ nav {
   background-color: #537188;
   line-height: 75px;
   padding: 0px 100px;
-  position: fixed;
+  top: 0;
+  position: absolute;
   z-index: 1;
 }
 
@@ -59,26 +60,52 @@ a:visited {
 
 body {
   background-color: white;
-}
-
-.intro-pic {
-  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .intro {
-  margin-top: 200px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.lezzerts {
-  backgrounf
-  color: black;
-  font-size: 40px;
-  text-align: left;
-  margin-left: 8px;
+.intro img {
+  width: 50%; /* Adjust the width as needed */
 }
 
-.tagline {
-  font-size: 20px;
-  margin-left: ;
+.intro .description {
+  flex-grow: 1;
+}
+
+.gallery {
+  display: flex;
+  overflow: hidden;
+}
+
+.gallery-item {
+  flex: 0 0 100%;
+  animation: slide 10s infinite; /* Adjust the duration as desired */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(
+      -200%
+    ); /* Adjust the translation based on the number of gallery items */
+  }
+}
+
+#bakeddesserts {
+  list-style-type: none;
 }
