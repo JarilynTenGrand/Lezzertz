@@ -1,146 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-/*
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-nav {s
-  top: 0;
-  width: 100%;
-  height: 75px;
-  background-color: #537188;
-  padding: 0px 100px;
-  z-index: 1;
-}
-
-nav .nav-logo {
-  width: 60px;
-  height: auto;
-  margin-top: 5.5px;
-}
-
-nav ul {
-  float: right;
-  position: absolute;
-}
-ss nav ul li {
-  display: inline-block;
-}
-
-nav .nav_links {
-  padding: 10px;
-  font-weight: 500px;
-  font-size: 16px;
-  color: #cbb279;
-  word-spacing: 8px;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-a:link {
-  color: #cbb279;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e1d4bb;
-  cursor: pointer;
-}
-
-a:visited {
-  color: #cbb279;
+  font-family: "Montserrat", sans-serif;
+  color: #195794;
+  text-shadow: 1px 1px 4px grey;
 }
 
 body {
-  background-color: white;
-}
-
-.intro-pic {
-  width: 60px;
-}
-
-.intro {
-  margin-top: 200px;
-  margin-left: 20px;
-}
-
-.lezzerts {
-  color: black;
-  font-size: 40px;
-  text-align: left;
-  margin-left: 8px;
-}
-
-.tagline {
-  font-size: 20px;
-  
-}
-*/
-body {
+  background-color: #e6dcda;
   margin: 0;
+
   padding: 0;
-  background-color: #eeeeee;
-}
-
-header {
-  width: auto;
-  height: 60px;
-  background-color: #3a98b9;
-}
-
-header a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff1dc;
+}
+
+.nav-bar {
+  margin: 10px;
+  width: auto;
+  border-radius: 5px;
+  height: fit-content;
+  background-size: cover;
+  background-color: rgb(25, 87, 148, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-bar a {
+  text-shadow: 1px 1px 4px grey;
+  color: #195794;
   text-decoration: none;
 }
 
+.nav-bar hr {
+  margin: 0;
+}
 .nav-logo {
   height: 50px;
   margin-top: 5px;
   margin-left: 20px;
 }
 
-header ul.nav-links li {
+.nav-links li {
   display: inline-block;
 }
 
 .nav-links {
-  word-spacing: 10px;
   float: right;
+  top: 5px;
+}
+header h1,
+p {
+  color: #195794;
+  text-shadow: #50514f;
+  text-align: center;
+}
+
+header p {
+  font-style: italic;
 }
 
 .nav-links li:last-child {
   margin-right: 20px;
 }
 
-header a:hover {
-  color: #e8d5c4;
+.nav-bar a:hover {
+  color: #c74e30;
 }
-
-.intro-image {
-  float: right;
-  height: 400px;
-}
-
-.intro-title {
-  width: calc(100% - 400px);
-  height: 400px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.intro-title h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.intro-title p {
-  font-style: italic;
-  font-size: 20px;
+.nav-menu {
+  margin-right: 20px;
 }
