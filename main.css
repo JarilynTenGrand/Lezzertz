@@ -60,7 +60,7 @@ header p {
 }
 
 .nav-bar a:hover {
-  color: #c74e30;
+  color: #f09f54;
 }
 .nav-menu {
   margin-right: 20px;
@@ -91,6 +91,7 @@ header p {
 }
 
 .card-content {
+  text-transform: capitalize;
   text-align: center;
   font-weight: none;
   padding: 10px;
@@ -117,7 +118,7 @@ header p {
 }
 
 .recipe-ingredients li {
-  list-style-type: none;
+  list-style-type: disc;
 }
 
 .recipe-ingredients {
