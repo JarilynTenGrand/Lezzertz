@@ -13,10 +13,9 @@ body {
 }
 
 .nav-bar {
-  margin: 10px;
+  display: flex;
+  flex-shrink: 1;
   width: 100%;
-  border-radius: 5px;
-  height: fit-content;
   background-size: cover;
   background-color: rgb(25, 87, 148, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,15 +40,6 @@ body {
   float: right;
   top: 5px;
 }
-header h1,
-p {
-  text-align: center;
-}
-
-header p {
-  padding: 10px;
-  font-style: italic;
-}
 
 .nav-links li:last-child {
   margin-right: 20px;
@@ -60,6 +50,10 @@ header p {
 }
 .nav-menu {
   margin-right: 20px;
+}
+
+header {
+  text-align: right;
 }
 .card-container {
   flex-wrap: wrap;
@@ -93,6 +87,19 @@ header p {
   padding: 10px;
 }
 
+.card-content2 {
+  text-align: center;
+  font-weight: none;
+  padding: 10px;
+}
+
+.card-content2 h3 {
+  text-align: center;
+}
+
+.card-content2 p {
+  text-align: left;
+}
 .card-container a:link {
   color: inherit;
   text-decoration: none;
@@ -118,6 +125,7 @@ header p {
 }
 
 .recipe-ingredients {
+  margin-bottom: 55px;
   text-transform: capitalize;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -128,6 +136,7 @@ header p {
 }
 
 .recipe-directions {
+  margin-bottom: 55px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   background-color: rgb(255, 255, 255, 0.3);
@@ -170,16 +179,20 @@ header p {
   font-size: 18px;
 }
 
-footer {
-  left: 0;
-  bottom: 10px;
+.nav-bar {
+  position: fixed;
   width: 100%;
+  max-width: inherit;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  max-width: inherit;
   background-color: rgb(25, 87, 148, 0);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
   text-align: center;
 }
-
 footer a:hover {
   color: #f09f54;
 }
@@ -188,4 +201,15 @@ footer a {
   text-shadow: 1px 1px 1px black;
   color: white;
   text-decoration: none;
+}
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+main {
+  padding: 3.5rem;
 }
