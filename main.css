@@ -94,10 +94,12 @@ header {
 
 .card-content2 h3 {
   text-align: center;
+  font-size: 25px;
 }
 
 .card-content2 p {
   text-align: left;
+  flex-wrap: wrap;
 }
 .card-container a:link {
   color: inherit;
@@ -155,6 +157,9 @@ header {
 }
 
 .intro img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.3);
   border-radius: 5px;
   object-fit: cover;
   width: 100%;
@@ -211,4 +216,36 @@ footer {
 
 main {
   padding: 3.5rem;
+}
+
+.intro-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.intro-imgs {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.3);
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.intro-menu a h2:hover {
+  color: #f09f54;
+}
+
+.intro-menu a {
+  text-decoration: none;
+}
+
+.intro-imgs:hover {
+  opacity: 0.7;
+}
+.card-content2 p {
 }
