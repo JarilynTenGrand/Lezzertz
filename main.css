@@ -104,6 +104,15 @@ header {
   text-align: left;
   flex-wrap: wrap;
 }
+.card-content3 h3 {
+  text-align: center;
+  font-size: 25px;
+}
+.card-content3 p {
+  text-align: left;
+  flex-wrap: wrap;
+}
+
 .card-container a:link {
   color: inherit;
   text-decoration: none;
